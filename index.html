@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>KeduTV Invite Card</title>
+    <style>
+      .attribution {
+        font-size: 12px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        color: rgb(143, 135, 135);
+      }
+    
+      .attribution a {
+        color: hsl(0, 21%, 88%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <img src="img/Artboard 1@4x.png" alt="kedutv logo" />
+    </header>
+    <div class="container"></div>
+    <div class="envelope" id="envelop">
+      <div class="flap" id="flappy"></div>
+      <div class="image" id="img">
+        <!-- <img src="img/invite.jpg" class="image img" alt=""> -->
+      </div>      
+    </div>
+    </div>
+    <div class="btnWrapper">
+      <button class="btn btn_accept" id="openBtn" onclick="openFlap()">Accept Invite</button>
+      <button class="btn btn_reset" id="resetBtn" onclick="closeFlap()">Reset</button>
+    </div>
+    <!-- <div class="acceptedDiv">
+      <h2 class="acceptedHeaderTwo">Thank You!</h2>
+    </div> -->
+    <footer class="footer">
+      <div class="attribution">
+        Party Invite From
+        <a href="https://www.kedutv.com" target="_blank">KeduTV</a>. Coded by <a
+          href="https://github.com/Udeme01" target='_blank'>Udeme Emmanuel</a>.
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

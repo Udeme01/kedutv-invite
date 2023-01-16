@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200vh;
+  background-color: rgba(3, 3, 31, 0.932);
+} */
+
+body {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background-color: rgba(3, 3, 31, 0.932);
+  margin: 0 auto;
+}
+
+/* BTN STYLE */
+
+.btnWrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background: none;
+  color: rgba(3, 3, 31, 0.932);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.btn_accept,
+.btn_reset {
+  position: relative;
+  top: -100px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  background-color: rgb(67, 60, 60);
+  color: rgba(3, 3, 31, 0.932);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  z-index: 5;
+}
+.btn_reset {
+  margin-left: 1.5rem;
+}
+.btn_accept:hover {
+  background-color: rgba(16, 79, 21, 0.932);
+  color: white;
+}
+.btn_reset:hover {
+  background-color: rgb(145, 8, 8);
+  color: #fff;
+}
+
+
+/* HERO SECTION HEADER */
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hero img {
+  margin: 2rem;
+  width: 50%;
+  max-width: 200px;
+}
+
+/* ENVELOPE STYLING */
+.envelope {
+  position: relative;
+  background-color: rgba(3, 3, 31, 0.932);
+  width: 550px;
+  height: 300px;
+  border-radius: 0px 0px 12px 12px;
+  /* z-index: 5; */
+  margin-top: 17.5rem;
+}
+
+.envelope::before {
+  content: '';
+  width: 12%;
+  position: absolute;
+  border-left: 240px solid rgba(16, 16, 114, 0.932);
+  border-right: 245px solid rgba(13, 13, 91, 0.932);
+  border-top: 150px solid rgba(3, 3, 31, 0.932);
+  border-bottom: 150px solid rgba(2, 2, 133, 0.986);
+  border-radius: 0px 0px 12px 12px;
+}
+
+.envelope::after {
+  content: '';
+  position: absolute;
+  width: 13%;
+  border-left: 240px solid rgb(4, 4, 27);
+  border-right: 240px solid rgb(2, 4, 25);
+  border-top: 150px solid transparent;
+  border-bottom: 150px solid rgb(3, 3, 22);
+  border-radius: 0px 0px 12px 12px;
+}
+
+.envelope .flap {
+  position: absolute;
+  border-left: 275px solid transparent;
+  border-right: 278px solid transparent;
+  border-top: 200px solid rgb(1, 14, 22);
+  border-bottom: 190px solid transparent;
+  transform-origin: top;
+  transition: 5.5s 1s ease;
+  z-index: 1;
+}
+
+.envelope .image {
+  position: absolute;
+  width: 550px;
+  height: 295px;
+  background-image: url('img/invite.jpg');
+  background-size: cover;
+  background-position: center center;
+  border-radius: 0px 0px 12px 12px;
+  transition-property: all;
+  transition-duration: 3s;
+  /* display: none; */
+}
+
+.acceptedDiv {
+  border: 1px solid green;
+  padding: .5rem 2.5rem;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 60px;
+  text-align: center;
+  color: white;
+}
+
+
+/* media 10uery */
+@media (max-width: 650px){
+  body{
+    margin-right: 2rem;
+    padding: 0;
+  }
+}
