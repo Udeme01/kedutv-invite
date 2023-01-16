@@ -57,17 +57,17 @@ body {
   cursor: pointer;
   z-index: 5;
 }
-.btn_reset {
+/* .btn_reset {
   margin-left: 1.5rem;
-}
+} */
 .btn_accept:hover {
   background-color: rgba(16, 79, 21, 0.932);
   color: white;
 }
-.btn_reset:hover {
+/* .btn_reset:hover {
   background-color: rgb(145, 8, 8);
   color: #fff;
-}
+} */
 
 
 /* HERO SECTION HEADER */
@@ -80,6 +80,7 @@ body {
   margin: 2rem;
   width: 50%;
   max-width: 200px;
+  cursor: pointer;
 }
 
 /* ENVELOPE STYLING */

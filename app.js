@@ -15,12 +15,12 @@ function openFlap(){
   cover.style.transitionDelay = '1s';
 }
 
-reset.addEventListener('click', closeFlap);
+// reset.addEventListener('click', closeFlap);
 
-function closeFlap(){
-  cover.style.transform = "rotateX(0deg)";
-  letter.style.transform = "translateY(0px)";
-  cover.style.zIndex = 1;
-  letter.style.transitionDelay = '1s';
-  cover.style.transitionDelay = '3s';
-}
+// function closeFlap(){
+//   cover.style.transform = "rotateX(0deg)";
+//   letter.style.transform = "translateY(0px)";
+//   cover.style.zIndex = 1;
+//   letter.style.transitionDelay = '1s';
+//   cover.style.transitionDelay = '3s';
+// }
